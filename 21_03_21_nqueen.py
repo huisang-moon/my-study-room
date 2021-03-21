@@ -18,7 +18,7 @@ def set(i: int) -> None:
     for j in range(8):
         if (not flag_a[j]
         and not flag_b[i+j] # 대각선 ↗↙
-        and not flag_c[i-j+7] ): #대각선 ↖↘
+        and not flag_c[i-j+7] ): # 대각선 ↖↘
             pos[i] = j #퀸을 j행에 배치
             if i == 7: #모든 열에 퀸을 배치 완료
                 put()
