@@ -105,40 +105,7 @@ for i in range(num):
         group_word += 1
 print(group_word)
 
-#10 그룹 단어 체커
 
-num = int(input())
-group_word = 0 
-
-for i in range(num):
-    num_2 = input()
-    error = 0 #그룹단어 아닌 것
-    for j in range(len(num_2)-1):
-        if num_2[j] != num_2[j+1]: #연달아 나오는 문자가 다를 때
-            new_num = num_2[j+1:]
-            if new_num.count(num_2[j]) > 0:
-                error += 1
-    if error == 0 :
-        group_word += 1
-print(group_word)
-
-
-#10 그룹 단어 체커
-
-num = int(input())
-group_word = 0 
-
-for i in range(num):
-    num_2 = input()
-    error = 0 #그룹단어 아닌 것
-    for j in range(len(num_2)-1):
-        if num_2[j] != num_2[j+1]: #연달아 나오는 문자가 다를 때
-            new_num = num_2[j+1:]
-            if new_num.count(num_2[j]) > 0:
-                error += 1
-    if error == 0 :
-        group_word += 1
-print(group_word)
 
 
 
